@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en" id="top">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vaishu Portfolio</title>
+
+    <style>
+      /* Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        background: #f4f6f8;
+        color: #333;
+        line-height: 1.6;
+        padding: 20px;
+      }
+
+      /* Header */
+      h1 {
+        text-align: center;
+        color: #4f46e5;
+        margin-bottom: 8px;
+      }
+
+      .intro {
+        text-align: center;
+        margin-bottom: 25px;
+        font-size: 16px;
+      }
+
+      /* Navigation */
+      nav ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        list-style: none;
+        background: #1f2937;
+        padding: 12px;
+        border-radius: 8px;
+        margin-bottom: 35px;
+      }
+
+      nav li {
+        margin: 6px;
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 8px 14px;
+        border-radius: 4px;
+        transition: background 0.3s;
+      }
+
+      nav a:hover {
+        background: #4f46e5;
+      }
+
+      /* Sections */
+      section {
+        background: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      }
+
+      h2 {
+        color: #4f46e5;
+        margin-bottom: 12px;
+      }
+
+      h3 {
+        margin-top: 15px;
+        margin-bottom: 8px;
+      }
+
+      /* Lists */
+      ul,
+      ol {
+        margin-left: 20px;
+        margin-top: 8px;
+      }
+
+      li {
+        margin: 6px 0;
+      }
+
+      /* Links */
+      a {
+        color: #4f46e5;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      /* Projects */
+      #projects ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      #projects li {
+        background: #f9fafb;
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 6px;
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+      }
+
+      #projects li:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      }
+
+      /* Contact */
+      #contact ul {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      #contact li {
+        margin-bottom: 10px;
+      }
+
+      /* Social Icons */
+      .social-icons img {
+        margin-right: 12px;
+        margin-top: 10px;
+        cursor: pointer;
+        transition: transform 0.3s;
+      }
+
+      .social-icons img:hover {
+        transform: scale(1.2);
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 14px;
+        color: #555;
+      }
+
+      /* Back to top */
+      .back-top {
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Vaishu Portfolio Website</h1>
+    <p class="intro">
+      Welcome to my portfolio website. Use the navigation below to explore.
+    </p>
+
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="./Sample projects/Anchakatta Vaishnavi.pdf.docx" download>
+            Download Resume
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a final-year B.Tech student and aspiring Full Stack Developer with
+        hands-on experience in building responsive web applications using Java
+        and React. I am currently undergoing a Full Stack Development internship
+        and continuously improving my technical skills.
+      </p>
+
+      <p>
+        <a
+          href="https://github.com/anchakattavaishnavi1521-jpg"
+          target="_blank"
+        >
+          Visit my GitHub Profile
+        </a>
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML, CSS, JavaScript, ReactJS</li>
+        <li>Java, JDBC, JEE, Hibernate, Spring Boot</li>
+        <li>MySQL</li>
+      </ul>
+
+      <h3>Learning Goals</h3>
+      <ol>
+        <li>
+          Advanced Frontend Development
+          <ul>
+            <li>React JS</li>
+            <li>Next.js</li>
+          </ul>
+        </li>
+        <li>AI integration in web applications</li>
+      </ol>
+
+      <h3>Tech Glossary</h3>
+      <dl>
+        <dt><b>API</b></dt>
+        <dd>Application Programming Interface for system communication</dd>
+        <dt><b>CI/CD</b></dt>
+        <dd>Continuous integration and continuous deployment practices</dd>
+      </dl>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li>🎬 Movie Blog Website</li>
+        <li>📅 List of Events Website</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <ul>
+        <li>
+          Email:
+          <a href="mailto:anchakattavaishnavi1521@gmail.com"
+            >anchakattavaishnavi1521@gmail.com</a
+          >
+        </li>
+        <li>Phone: <a href="tel:7680051902">7680051902</a></li>
+      </ul>
+
+      <h3>Connect with me</h3>
+      <div class="social-icons">
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/3128/3128329.png"
+          alt="LinkedIn"
+          width="30"
+          height="30"
+        />
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/733/733609.png"
+          alt="GitHub"
+          width="30"
+          height="30"
+        />
+      </div>
+    </section>
+
+    <div class="back-top">
+      <a href="#top">
+        <img
+          src="https://cdn-icons-png.flaticon.com/128/15714/15714611.png"
+          alt="Back to top"
+          width="20"
+          height="20"
+        />
+      </a>
+    </div>
+
+    <footer>© 2026 Vaishnavi | Aspiring Full Stack Developer</footer>
+  </body>
+</html>
