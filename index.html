@@ -1,72 +1,252 @@
-<!-- document type is html version 5 -->
 <!doctype html>
 <html lang="en">
-  <!--lang="te" or kn or -->
-  <!-- html is a root tag or main tag or priamry tag -->
   <head>
-    <!-- head data is meta data. meta data is data  about data.. -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Course Registration Form</title>
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(135deg, #74ebd5, #acb6e5);
+        margin: 0;
+        padding: 20px;
+      }
+
+      h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 20px;
+      }
+
+      form {
+        max-width: 800px;
+        margin: auto;
+      }
+
+      fieldset {
+        border: none;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      fieldset:nth-child(1) {
+        background-color: #e0f7fa;
+      }
+
+      fieldset:nth-child(2) {
+        background-color: #fff3e0;
+      }
+
+      legend {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 5px 10px;
+        color: #444;
+      }
+
+      table {
+        width: 100%;
+      }
+
+      td {
+        padding: 10px;
+      }
+
+      label {
+        font-weight: bold;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        font-size: 14px;
+      }
+
+      input[type="radio"] {
+        width: auto;
+      }
+
+      input[type="submit"],
+      input[type="reset"] {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      input[type="submit"]:hover,
+      input[type="reset"]:hover {
+        background-color: #45a049;
+      }
+
+      textarea {
+        resize: vertical;
+        min-height: 60px;
+      }
+    </style>
   </head>
+
   <body>
-    <!-- body tag is a visual content -->
-    <h1>Project2</h1>
-    <h2>My life &skills and portofolio website 👍</h2>
-    <h1>Major life events</h1>
-    <ol>
-      <li>Born on 2004</li>
-      <li>Graduation at 2026</li>
-      <li>First job in 2026</li>
-    </ol>
-    <h2>Achievements</h2>
-    <ol type="I" start="5">
-      <li>joined tap academy</li>
-      <li>got thia portal</li>
-      <li>learning html from me</li>
-    </ol>
-    <h3>Technical skills</h3>
-    <ul>
-      <li>html</li>
-      <li>css</li>
-      <li>javascript</li>
-      <li>reactjs</li>
-    </ul>
-    <h1>Tools i use</h1>
-    <ul type="square">
-      <li>vscode</li>
-      <li>github</li>
-      <li>eclipse</li>
-    </ul>
-    <h1>Hobbies</h1>
-    <ul type="circle">
-      <li>sleeping</li>
-      <li>travelling</li>
-      <li>dancing</li>
-    </ul>
-    <dl>
-      <dt>html</dt>
-      <dd>hyper text markup language</dd>
-      <dt>css</dt>
-      <dd>cascading style sheets</dd>
-      <dt>js</dt>
-      <dd>javascript language</dd>
-    </dl>
-    <h1>personal development tool</h1>
-    <ol>
-      <li>short term goals</li>
-      <ul>
-        <li>master react</li>
-        <ul>
-          <li>learn components</li>
-        </ul>
-        <li>get aws certificate</li>
-      </ul>
-      <li>long term goals</li>
-      <ul>
-        <li>get a job in reputed company</li>
-        <li>in infosys</li>
-      </ul>
-    </ol>
+    <h1>Course Registration Form</h1>
+
+    <form>
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td><label for="fname">First Name</label></td>
+            <td>
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                placeholder="Ex: Vaishu"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="sname">Surname</label></td>
+            <td>
+              <input
+                type="text"
+                name="sname"
+                id="sname"
+                placeholder="Ex: Reddy"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="mbno">Mobile Number</label></td>
+            <td><input type="tel" name="mbno" id="mbno" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="example@gmail.com"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="pwd">Password</label></td>
+            <td><input type="password" name="pwd" id="pwd" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="cpassword">Confirm Password</label></td>
+            <td><input type="password" name="cpassword" id="cpassword" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="dob">Date Of Birth</label></td>
+            <td><input type="date" name="dob" id="dob" /></td>
+          </tr>
+
+          <tr>
+            <td><label for="age">Age</label></td>
+            <td><input type="number" name="age" id="age" /></td>
+          </tr>
+
+          <tr>
+            <td><label>Gender</label></td>
+            <td>
+              <input type="radio" name="gender" value="male" /> Male
+              <input type="radio" name="gender" value="female" /> Female
+              <input type="radio" name="gender" value="other" /> Other
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="country">Select Country</label></td>
+            <td>
+              <select name="country" id="country">
+                <option>India</option>
+                <option>USA</option>
+                <option>Russia</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="pic">Upload Pic</label></td>
+            <td><input type="file" id="pic" /></td>
+          </tr>
+
+          <tr>
+            <td><input type="reset" value="Reset" /></td>
+            <td></td>
+          </tr>
+        </table>
+      </fieldset>
+
+      <fieldset>
+        <legend>Course Details</legend>
+        <table>
+          <tr>
+            <td><label for="course">Select Course</label></td>
+            <td>
+              <select name="course" id="course">
+                <option>Full Stack Python</option>
+                <option>Full Stack Java</option>
+                <option>Web Development</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label>Delivery Mode</label></td>
+            <td>
+              <input type="radio" name="mode" value="online" /> Online
+              <input type="radio" name="mode" value="offline" /> Offline
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="inst">Institute Name</label></td>
+            <td>
+              <input
+                type="text"
+                name="inst"
+                id="inst"
+                placeholder="Ex: Tap Academy"
+              />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="level">Coding Knowledge Level</label></td>
+            <td>
+              <input type="range" id="level" name="level" min="0" max="100" />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="comments">Comments</label></td>
+            <td><textarea name="comments" id="comments"></textarea></td>
+          </tr>
+
+          <tr>
+            <td colspan="2" style="text-align: center">
+              <input type="submit" value="Submit" />
+            </td>
+          </tr>
+        </table>
+      </fieldset>
+    </form>
   </body>
 </html>
